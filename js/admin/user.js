@@ -4,6 +4,7 @@ const session = JSON.parse(localStorage.getItem("session"));
 if (!session) {
   alert("No tienes una sesión activa. Por favor, inicia sesión.");
   window.location.href = "login.html";
+  return;
 }
 
 // Obetener todos los usuarios

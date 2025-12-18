@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Autenticación - Sistema YAP</title>
+    <link rel="stylesheet" href="../css/auth.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center">
+    <div
+      class="bg-800/800 p-8 rounded-xl shadow-2xl w-full max-w-md text-center text-white"
+    >
+      <h2 class="text-3xl font-bold mb-6">Acceso Administrador</h2>
+      <form id="adminAuthForm" class="space-y-4">
+        <div>
+          <label for="adminKey" class="block text-gray-300 font-bold"
+            >Clave de administrador</label
+          >
+          <input
+            type="password"
+            id="adminKey"
+            class="w-full p-2 rounded bg-gray-300 text-black font-bold focus:ring-2 focus:ring-indigo-500"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-fuchsia-700 hover:bg-fuchsia-900 text-white font-semibold py-2 px-4 rounded-lg"
+        >
+          Entrar
+        </button>
+      </form>
+      <p class="mt-4 text-gray-400 text-sm">
+        Solo administradores autorizados pueden ingresar.
+      </p>
+    </div>
+    <script src="../js/auth/auth.js"></script>
+  </body>
+</html>
