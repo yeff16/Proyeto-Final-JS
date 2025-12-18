@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de sesión - Sistema YAP</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-red-600 to-indigo-900 via-gray-900 min-h-screen flex items-center justify-center"
+  >
+    <div
+      class="bg-800/80 backdrop-blur-md p-8 rounded-xl shadow-2xl w-full max-w-md"
+    >
+      <h2 class="text-3xl font-bold text-center text-white mb-6">
+        Iniciar Sesión
+      </h2>
+      <form id="loginForm" class="space-y-4">
+        <div>
+          <label for="username" class="block text-gray-300 font-bold"
+            >Usuario</label
+          >
+          <input
+            type="text"
+            id="username"
+            class="w-full p-2 rounded bg-700 text-black font-bold text-black focus:ring-2 focus:ring-indigo-500"
+            required
+          />
+        </div>
+        <div>
+          <label for="password" class="block text-gray-300 font-bold"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="w-full p-2 rounded text-black font-bold focus:ring-2 focus:ring-indigo-500"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 hover:bg-indigo-800 text-white font-semibold py-2 px-4 rounded-lg transition transform hover:scale-105"
+        >
+          Entrar
+        </button>
+      </form>
+      <p class="text-gray-400 text-sm text-center mt-4">
+        ¿No tienes cuenta?
+        <a href="register.html" class="text-red-400 hover:underline"
+          >Regístrate aquí</a
+        >
+      </p>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
