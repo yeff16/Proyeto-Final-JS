@@ -16,11 +16,11 @@ El sitio deberá contener, al menos, dos roles de usuario:
 
 Los administradores deberán ser capaces de:
 
-- Crear nuevos usuarios.
-- Modificar usuarios existentes.
-- Eliminar usuarios.
+- Crear nuevos usuarios.👍
+- Modificar usuarios existentes.👍
+- Eliminar usuarios.👍
 - Ver el listado de los usuarios registrados.
-Nota: CRUD (Create, Read, Update, Delete)
+Nota: CRUD (Create, Read, Update, Delete)👍
 
 El sitio debe contar con reglas de Autenticación y Autorización; esto es:
 
