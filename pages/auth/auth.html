@@ -6,14 +6,20 @@
     <link rel="stylesheet" href="../css/auth.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="min-h-screen flex items-center justify-center">
+  <body
+    class="bg-gradient-to-b from-orange-700 via-green-900 to-black min-h-screen flex items-center justify-center"
+  >
     <div
       class="bg-800/800 p-8 rounded-xl shadow-2xl w-full max-w-md text-center text-white"
     >
-      <h2 class="text-3xl font-bold mb-6">Acceso Administrador</h2>
+      <h2
+        class="text-3xl font-bold mb-6 text-white animate-bounce drop-shadow-lg"
+      >
+        Acceso Administrador
+      </h2>
       <form id="adminAuthForm" class="space-y-4">
         <div>
-          <label for="adminKey" class="block text-gray-300 font-bold"
+          <label for="adminKey" class="block text-gray-300 font-bold mb-2"
             >Clave de administrador</label
           >
           <input
@@ -30,7 +36,7 @@
           Entrar
         </button>
       </form>
-      <p class="mt-4 text-gray-400 text-sm">
+      <p class="mt-4 text-gray-100 text-sm">
         Solo administradores autorizados pueden ingresar.
       </p>
     </div>
