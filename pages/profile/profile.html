@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario - Sistema YAP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-indigo-900 via-purple-800 to-black min-h-screen flex items-center justify-center"
+  >
+    <div
+      class="bg-gray-900/80 p-8 rounded-xl shadow-2xl w-full max-w-md text-white"
+    >
+      <h1 class="text-3xl font-bold text-center mb-6">Perfil de Usuario</h1>
+      <div class="space-y-4 mb-6">
+        <p>
+          <span class="font-semibold">Nombre:</span>
+          <span id="username">Cargando...</span>
+        </p>
+        <p>
+          <span class="font-semibold">Correo:</span>
+          <span id="email">Cargando...</span>
+        </p>
+        <p>
+          <span class="font-semibold">Rol:</span>
+          <span id="role">Cargando...</span>
+        </p>
+      </div>
+      <form id="editForm" class="space-y-4">
+        <input
+          type="text"
+          id="newUsername"
+          placeholder="Nuevo nombre"
+          class="w-full p-2 rounded bg-gray-700 text-white"
+        />
+        <input
+          type="email"
+          id="newEmail"
+          placeholder="Nuevo correo"
+          class="w-full p-2 rounded bg-gray-700 text-white"
+        />
+        <input
+          type="password"
+          id="newPassword"
+          placeholder="Nueva contraseña"
+          class="w-full p-2 rounded bg-gray-700 text-white"
+        />
+        <button
+          type="submit"
+          class="w-full bg-teal-600 hover:bg-teal-800 py-2 px-4 rounded-lg font-semibold transition"
+        >
+          Guardar cambios
+        </button>
+      </form>
+      <div class="mt-6 text-center">
+        <a
+          href="../auth/logout.html"
+          class="bg-red-600 hover:bg-red-800 py-2 px-4 rounded-lg font-semibold inline-block"
+        >
+          Cerrar sesión
+        </a>
+      </div>
+    </div>
+    <script src="../../js/security.js"></script>
+  </body>
+</html>
